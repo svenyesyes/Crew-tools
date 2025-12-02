@@ -1,0 +1,6 @@
+messages:
+  prefix: "&8[&6CREW&8]"
+  no_permission: "&c✘ &7You are not allowed to do this!"
+  error: "&c✘ &7Something went wrong!"
+  player_not_found: "&c✘ &7Could not find player!"
+  player_not_online: "&c✘ &7This player is not online!"

@@ -1,0 +1,20 @@
+name: Crew-tools
+version: '1.0'
+main: lol.sven.crewTools.CrewTools
+api-version: '1.21'
+prefix: Crew
+load: STARTUP
+authors: [ Sven ]
+description: Give your server crew a boost with these tools.
+website: sven.lol
+
+commands:
+  crewtools:
+    description: Information about the plugin.
+
+  playerinfo:
+    description: See information about an online player.
+    aliases: [pi, playeri, pinfo]
+    usage: "Usage: /playerinfo <player>"
+    permission: crewtools.playerinfo
+    permission-message: ""
