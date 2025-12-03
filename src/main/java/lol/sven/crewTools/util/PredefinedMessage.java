@@ -6,10 +6,15 @@ import org.bukkit.ChatColor;
 public enum PredefinedMessage {
 
     PREFIX("messages.prefix", "&8[&6CREW&8]"),
+    SUCCESS("messages.success", "&a✔ &7Success!"),
+    FAILED("messages.failed", "&c✘ &Failed!"),
     NO_PERMISSION("messages.no_permission", "&c✘ &7You are not allowed to do this!"),
     ERROR("messages.error", "&c✘ &7Something went wrong!"),
+    EXECUTE_AS_PLAYER("messages.execute_as_player", "&c✘ &7You may only use this as a player!"),
     PLAYER_NOT_FOUND("messages.player_not_found", "&c✘ &7Could not find player!"),
-    PLAYER_NOT_ONLINE("messages.player_not_online", "&c✘ &7This player is not online!");
+    PLAYER_NOT_ONLINE("messages.player_not_online", "&c✘ &7This player is not online!"),
+    OPEN_GUI("messages.open_gui", "&b🛈 &7Opening GUI."),
+    TELEPORTED("messages.teleported", "&b🛈 &7Your are being teleported.");
 
     private final String config_entry;
     private final String defaultString;

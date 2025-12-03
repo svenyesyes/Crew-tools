@@ -14,7 +14,7 @@ commands:
 
   playerinfo:
     description: See information about an online player.
-    aliases: [pi, playeri, pinfo]
+    aliases: [pi, pinfo]
     usage: "Usage: /playerinfo <player>"
     permission: crewtools.playerinfo
     permission-message: ""

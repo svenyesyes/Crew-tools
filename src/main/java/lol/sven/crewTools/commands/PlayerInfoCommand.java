@@ -1,6 +1,7 @@
 package lol.sven.crewTools.commands;
 
 import lol.sven.crewTools.CrewTools;
+import lol.sven.crewTools.menus.PlayerInfoMenu;
 import lol.sven.crewTools.util.PredefinedMessage;
 import org.bukkit.Bukkit;
 import org.bukkit.command.Command;
@@ -20,6 +21,11 @@ public class PlayerInfoCommand implements CommandExecutor {
             return true;
         }
 
+        if(!(sender instanceof Player)) {
+            sender.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.EXECUTE_AS_PLAYER);
+            return true;
+        }
+
         if(args.length == 0){
             return false;
         }
@@ -30,7 +36,8 @@ public class PlayerInfoCommand implements CommandExecutor {
             return true;
         }
 
-
+        sender.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.OPEN_GUI);
+        new PlayerInfoMenu((Player) sender, p);
 
         return true;
     }
