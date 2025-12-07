@@ -41,6 +41,20 @@ public class PlayerInfoMenu {
         ping.setItemMeta(pingMeta);
         inv.setItem(3, ping);
 
+        ItemStack inventory = new ItemStack(Material.CHEST, 1);
+        ItemMeta inventoryMeta = inventory.getItemMeta();
+        inventoryMeta.setDisplayName(ChatColor.YELLOW + "Open Inventory");
+        inventoryMeta.setLore(List.of(ChatColor.GRAY + "(Preview only)"));
+        inventory.setItemMeta(inventoryMeta);
+        inv.setItem(6, inventory);
+
+        ItemStack enderInventory = new ItemStack(Material.ENDER_CHEST, 1);
+        ItemMeta enderInventoryMeta = enderInventory.getItemMeta();
+        enderInventoryMeta.setDisplayName(ChatColor.YELLOW + "Open Enderchest");
+        enderInventoryMeta.setLore(List.of(ChatColor.GRAY + "(Preview only)"));
+        enderInventory.setItemMeta(inventoryMeta);
+        inv.setItem(7, enderInventory);
+
         ItemStack teleport = new ItemStack(Material.ENDER_PEARL, 1);
         ItemMeta teleportMeta = teleport.getItemMeta();
         teleportMeta.setDisplayName(ChatColor.YELLOW + "Teleport");
