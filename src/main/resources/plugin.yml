@@ -21,7 +21,7 @@ commands:
   teleport:
     description: Teleport yourself or others.
     aliases: [ tp ]
-    usage: "Usage: /teleport <player1> <player2>"
+    usage: "Usage: /teleport <player1> [player2]"
     permission: crewtools.teleport
     permission-message: ""
   teleporthere:
@@ -35,4 +35,10 @@ commands:
     aliases: [ tpall ]
     usage: "Usage: /teleportall"
     permission: crewtools.teleport.all
+    permission-message: ""
+  gamemode:
+    description: Change gamemode
+    aliases: [ gmc, gamemodec, gms, gamemodes, gmsp, gamemodesp, gma, gamemodea, gm ]
+    usage: "Usage: /gamemode <mode> [player]"
+    permission: crewtools.gamemode
     permission-message: ""

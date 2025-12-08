@@ -24,7 +24,7 @@ public class TeleportTabCompleter implements TabCompleter {
             for (OfflinePlayer p : Bukkit.getServer().getOnlinePlayers()) {
                 o.add(p.getName());
             }
-            return TabCompleteUtil.filterNames(o, args[0]);
+            return TabCompleteUtil.filterStart(o, args[0]);
         }
 
         if (args.length == 2) {
@@ -35,7 +35,7 @@ public class TeleportTabCompleter implements TabCompleter {
             for (OfflinePlayer p : Bukkit.getServer().getOnlinePlayers()) {
                 o.add(p.getName());
             }
-            return TabCompleteUtil.filterNames(o, args[1]);
+            return TabCompleteUtil.filterStart(o, args[1]);
         }
         return new ArrayList<>();
     }

@@ -5,7 +5,7 @@ import java.util.List;
 
 public class TabCompleteUtil {
 
-    public static List<String> filterNames(List<String> players, String filter) {
+    public static List<String> filterStart(List<String> players, String filter) {
 
         List<String> filtered = new ArrayList<>();
 

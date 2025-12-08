@@ -11,3 +11,5 @@ messages:
   teleported_others: "&a✔ &7Teleporting player(s)."
   success: "&a✔ &7Success!"
   failed: "&c✘ &Failed!"
+  updated_gamemode: "&b🛈 &7Your gamemode has been updated."
+  updated_gamemode_other: "&a✔ &7Updated gamemode."

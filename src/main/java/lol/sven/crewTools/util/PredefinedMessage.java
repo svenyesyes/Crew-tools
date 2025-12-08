@@ -16,7 +16,9 @@ public enum PredefinedMessage {
     OPEN_GUI("messages.open_gui", "&b🛈 &7Opening GUI."),
     TELEPORTED("messages.teleported", "&b🛈 &7Your are being teleported."),
     TELEPORTING_SELF("messages.teleported_self", "&a✔ &7Your are being teleported."),
-    TELEPORTING_OTHERS("messages.teleported_others", "&a✔ &7Teleporting player(s).");
+    TELEPORTING_OTHERS("messages.teleported_others", "&a✔ &7Teleporting player(s)."),
+    UPDATED_GAMEMODE("messages.updated_gamemode", "&b🛈 &7Your gamemode has been updated."),
+    UPDATED_GAMEMODE_OTHER("messages.updated_gamemode_other", "&a✔ &7Updated gamemode.");
 
     private final String config_entry;
     private final String defaultString;

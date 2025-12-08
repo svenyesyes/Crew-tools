@@ -24,7 +24,7 @@ public class PlayerInfoTabCompleter implements TabCompleter {
             for (OfflinePlayer p : Bukkit.getServer().getOnlinePlayers()) {
                 o.add(p.getName());
             }
-            return TabCompleteUtil.filterNames(o, args[0]);
+            return TabCompleteUtil.filterStart(o, args[0]);
         }
         return new ArrayList<>();
     }
