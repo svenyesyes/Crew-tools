@@ -61,7 +61,7 @@ public class MenuListener implements Listener {
             }
 
             if(e.getCurrentItem().getType() == Material.ENDER_PEARL) {
-                if (!self.hasPermission("crewtools.teleport")) {
+                if (!self.hasPermission("crewtools.teleport.self")) {
                     self.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.NO_PERMISSION);
                     self.closeInventory();
                     return;

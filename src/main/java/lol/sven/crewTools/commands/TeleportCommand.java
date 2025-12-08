@@ -14,7 +14,7 @@ public class TeleportCommand implements CommandExecutor {
 
         boolean other = false;
 
-        if (!sender.hasPermission("crewtools.teleport")) {
+        if (!sender.hasPermission("crewtools.teleport.self")) {
             sender.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.NO_PERMISSION);
             return true;
         }

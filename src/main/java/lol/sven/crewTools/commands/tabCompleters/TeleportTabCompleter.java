@@ -15,7 +15,7 @@ public class TeleportTabCompleter implements TabCompleter {
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
 
         // Don't autocomplete when player has no permission to use this command.
-        if (!sender.hasPermission("crewtools.teleport")) {
+        if (!sender.hasPermission("crewtools.teleport.self")) {
             return new ArrayList<>();
         }
 
