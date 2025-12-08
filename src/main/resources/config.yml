@@ -7,5 +7,7 @@ messages:
   player_not_online: "&c✘ &7This player is not online!"
   open_gui: "&b🛈 &7Opening GUI."
   teleported: "&b🛈 &7Your are being teleported."
+  teleported_self: "&a✔ &7Your are being teleported."
+  teleported_others: "&a✔ &7Teleporting player(s)."
   success: "&a✔ &7Success!"
   failed: "&c✘ &Failed!"

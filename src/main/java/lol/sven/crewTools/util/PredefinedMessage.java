@@ -14,7 +14,9 @@ public enum PredefinedMessage {
     PLAYER_NOT_FOUND("messages.player_not_found", "&c✘ &7Could not find player!"),
     PLAYER_NOT_ONLINE("messages.player_not_online", "&c✘ &7This player is not online!"),
     OPEN_GUI("messages.open_gui", "&b🛈 &7Opening GUI."),
-    TELEPORTED("messages.teleported", "&b🛈 &7Your are being teleported.");
+    TELEPORTED("messages.teleported", "&b🛈 &7Your are being teleported."),
+    TELEPORTING_SELF("messages.teleported_self", "&a✔ &7Your are being teleported."),
+    TELEPORTING_OTHERS("messages.teleported_others", "&a✔ &7Teleporting player(s).");
 
     private final String config_entry;
     private final String defaultString;

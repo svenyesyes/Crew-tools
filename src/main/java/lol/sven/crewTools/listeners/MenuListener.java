@@ -32,7 +32,7 @@ public class MenuListener implements Listener {
             e.setCancelled(true);
 
             Player self = (Player) e.getWhoClicked();
-            Player target = Bukkit.getPlayer(e.getView().getItem(0).getItemMeta().getItemName());
+            Player target = Bukkit.getPlayer(ChatColor.stripColor(e.getInventory().getItem(0).getItemMeta().getDisplayName()));
 
             if(target == null) {
                 self.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.PLAYER_NOT_ONLINE);
@@ -61,7 +61,12 @@ public class MenuListener implements Listener {
             }
 
             if(e.getCurrentItem().getType() == Material.ENDER_PEARL) {
-                self.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.TELEPORTED);
+                if (!self.hasPermission("crewtools.teleport")) {
+                    self.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.NO_PERMISSION);
+                    self.closeInventory();
+                    return;
+                }
+                self.sendMessage(PredefinedMessage.PREFIX + " " + PredefinedMessage.TELEPORTING_SELF);
                 self.teleport(target);
                 self.closeInventory();
                 return;

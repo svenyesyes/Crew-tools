@@ -10,12 +10,12 @@ import org.bukkit.command.TabCompleter;
 import java.util.ArrayList;
 import java.util.List;
 
-public class PlayerInfoTabCompleter implements TabCompleter {
+public class TeleportHereTabCompleter implements TabCompleter {
     @Override
     public List<String> onTabComplete(CommandSender sender, Command command, String label, String[] args) {
 
         // Don't autocomplete when player has no permission to use this command.
-        if(!sender.hasPermission("crewtools.playerinfo")) {
+        if(!sender.hasPermission("crewtools.teleport.others")) {
             return new ArrayList<>();
         }
 

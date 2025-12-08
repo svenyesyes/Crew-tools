@@ -14,7 +14,25 @@ commands:
 
   playerinfo:
     description: See information about an online player.
-    aliases: [pi, pinfo]
+    aliases: [ pi, pinfo ]
     usage: "Usage: /playerinfo <player>"
     permission: crewtools.playerinfo
+    permission-message: ""
+  teleport:
+    description: Teleport yourself or others.
+    aliases: [ tp ]
+    usage: "Usage: /teleport <player1> <player2>"
+    permission: crewtools.teleport
+    permission-message: ""
+  teleporthere:
+    description: Teleport a player to yourself.
+    aliases: [ tphere ]
+    usage: "Usage: /teleporthere <player>"
+    permission: crewtools.teleport.others
+    permission-message: ""
+  teleportall:
+    description: Teleport every player to yourself.
+    aliases: [ tpall ]
+    usage: "Usage: /teleportall"
+    permission: crewtools.teleport.all
     permission-message: ""
