@@ -42,3 +42,9 @@ commands:
     usage: "Usage: /gamemode <mode> [player]"
     permission: crewtools.gamemode
     permission-message: ""
+  speed:
+    description: Change gamemode
+    usage: "Usage: /speed <1-10|default|reset> [player]"
+    aliases: [ walkspeed, flyspeed ]
+    permission: crewtools.speed
+    permission-message: ""

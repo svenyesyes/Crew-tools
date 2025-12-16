@@ -32,6 +32,8 @@ public final class CrewTools extends JavaPlugin {
         getCommand("teleportall").setTabCompleter(new NoArgsCompleter());
         getCommand("gamemode").setExecutor(new GamemodeCommand());
         getCommand("gamemode").setTabCompleter(new GamemodeTabCompleter());
+        getCommand("speed").setExecutor(new SpeedCommand());
+        getCommand("speed").setTabCompleter(new SpeedTabCompleter());
     }
 
     private void registerListeners() {
